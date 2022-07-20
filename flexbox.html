@@ -1,0 +1,67 @@
+<!-- container에 꾸며줄수 있는 속성값
+  1. display
+  2. flex-direction
+  기본값(수평):row; / 오른쪽에서왼쪽:row reverse; / 수직:column; / 아래에서왼쪽:column-reverse;
+  3. flex-wrap
+  기본값(한줄에 붙어있음):nowrap; / 자동적으로 다음줄로 넘어감:wrap; / 아래에서부터 넘어감:wrap-reverse;
+  *flex-flow: flex-direction felx-wrap; 이므로 flow써서 한꺼번에 적용가능함 ex) flex-flow: column wrap;
+  4. justify-content(x축에서 아이템 배치)
+  flex-start;(row는 왼쪽에서 오른쪽으로(왼쪽정렬) column은 위에서 아래로(위쪽정렬))
+  flex-end;(reverse와 달리 순서는 유지하되 row는 오른쪽정렬 column은 아래쪽정렬)
+  center;(가운데정렬) / space-around;(박스기준 왼쪽 오른쪽으로 공간 생성하니까 맨끝은 공간이 반밖에 안됨)
+  space-evenly;(박스기준 똑같은 공간 생성하니까 맨끝도 공간이 같음) / space-between;(맨끝은 container에 딱 맞추고 중간만 공간 생성)
+  5. align-items(y축에서 아이템 배치)
+  기본값(container의 높이와 동일하게 함):stretch; / flex-start; / flex-end; / center;(가운데정렬)
+  baseline;(만약 padding으로 텍스트 위치가 바뀌었을 때 사용하면 다른 아이템 텍스트 위치와 동일해짐)
+  6. align-content(wrap일때만 사용)
+  기본값(container의 높이와 동일하게 함):stretch; / flex-start;(아이템이 붙음) / flext-end;(아이템이 붙음) / center;(가운데정렬)
+  space-between;(맨끝은 container에 딱 맞추고 중간만 공간 생성)
+  space-around;(박스기준 위쪽 아래쪽으로 공간 생성하니까 맨끝은 공간이 반밖에 안됨)
+-->
+
+<!-- item에 꾸며줄수 있는 속성값
+  1. order:(순서변경) - 기본값:0;
+  2. flex-grow:(컨테이너 크기에 맞춰 크기가 조절되고 커질 때는 설정한 값만 비율에 맞춰 조절됨) - 기본값:0; / ex)비율은 5:3:2 사용
+  3. flex-shrink(컨테이너가 작아질 때 아이템 크기가 조절됨) - 기본값:0; / ex)grow와 동일
+  4. flex-basis(컨테이너가 커지거나 작아질 때 설정된 값에 따라 크기가 조절됨) - 기본값: auto; / ex)비율은 50%:30%:20 처럼 %사용
+  *flex: flex-grow flex-shrink flex-basis; 이므로 flex써서 한꺼번에 적용 가능함
+  5. align-self(아이템 배치)
+  기본값:auto / stretch(Container의 교차 축을 채우기 위해 Item을 늘림)
+  flex-start;(시작점 정렬) / flex-end;(끝점 정렬) / center;(가운데정렬) / baseline(Item을 문자 기준선에 정렬)
+-->
+
+<!-- 빠른생성 팁: div.cotaine>div.item.item${$*10}-->
+<!-- .tem.item을 써서 보기에는 하나의 클래스지만 item클래스 안에 item1~10이 있음-->
+<div class="container">
+  <div class="item item1">1</div>
+  <div class="item item2">2</div>
+  <div class="item item3">3</div>
+</div>
+
+<style>
+  .container {
+    padding-top: 100px;
+    background: beige;
+    height: 100vh;
+    display: flex;
+  }
+
+  .item {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+  }
+
+  .item1 {
+    background: red;
+  }
+  .item2 {
+    background: blue;
+
+  }
+  .item3 {
+    background: green;
+
+  }
+
+</style>
