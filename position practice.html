@@ -1,0 +1,74 @@
+<article class="container">
+  <div></div>
+  <div class="box1">relative</div>
+  <div class="box2">absolute</div>
+  <div class="box3">fixedx</div>
+  <div class="box4">sticky</div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</article>
+
+<!-- relative는 원래 위치에서 움직이는 것-->
+<!-- absolute는 담겨있는 부모태그 기준으로 움직이는 것-->
+<!-- fixed는 박스에서 벗어나 윈도우 기준으로 움직이는 것 스크롤해도 그대로 있음--->
+<!-- sticky는 원래 위치에서 움직이는 것 스크롤해도 그대로 있음-->
+<!-- 즉 fixed는 윈도우 기준이고 sticky는 원래 위치 기준임-->
+
+<style>
+  div {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    background: red;
+  }
+
+  .container {
+    background: yellow;
+    left: 20px;
+    top: 20px;
+    position: relative;
+  }
+
+  .box1 {
+    background: orange;
+    left: 20px;
+    top: 20px;
+    position: relative;
+  }
+
+  .box2 {
+    background: green;
+    left: 20px;
+    top: 20px;
+    position: absolute;
+  }
+
+  .box3 {
+    background: blue;
+    left: 20px;
+    top: 20px;
+    position: fixed;
+  }
+
+  .box4 {
+    background: indigo;
+    left: 20px;
+    top: 20px;
+    position: sticky;
+  }
+
+</style>
