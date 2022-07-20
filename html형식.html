@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Html 기본양식</title>
+  <!-- html에서는 이거 사용-->
+  <style></style>
+  <!-- style(css)은 link사용 -->
+  <link href="style형식.css" rel="stylesheet">
+</head>
+<body>
+  <div class="header" id="link_header">
+      <div class="header-Title">
+      <h1>Main Page Title</h1>
+      </div>
+      <div class="header-nav">
+        <ul class="nav">
+          <!-- id태그 이름을 a href태그 이름으로 하면
+          a href 클릭시 페이지 내의 id태그로 이동함-->
+          <li><a href="#link_header">HOME</a></li>
+          <li><a href="###">ABOUT</a></li>
+          <li><a href="###">SERVICE</a></li>
+          <li><a href="#link_footer">CONTACT</a></li>
+        </ul>
+      </div>
+  </div>
+
+  <div class="main">
+  <!-- main 태그 -->
+  <!-- 핵심적인 콘텐츠 -->
+  <!-- 문서에 하나의 main태그만 존재할 수 있음 -->
+    <div class="section">
+      <!-- section 태그 -->
+      <!-- 문서의 일반적인 영역을 설정 -->
+      <!-- block레벨 요소다. -->
+      <!-- section내부에 article이 들어갈 수 있다. article안에 section이 들어갈 수 있다. -->
+      <!-- section태그에는 어떤 의미가 있기 때문에 제목과 내용이 일반적으로 들어온다. -->
+      <h2>Section</h2>
+      <div class="article">
+        <!-- article 태그 -->
+        <!-- 독립적으로 구분되거나 재사용 가능한 영역을 설정 -->
+        <!-- 매거진/신문기사, 블로그 -->
+        <!-- block레벨 요소 -->
+        <h3>Article1</h3>
+        <p>A news article discusses current or recent news of either general interest (i.e. daily newspapers) or of a specific topic (i.e. political or trade news magazines, club newsletters, or technology news websites).
+        A news article can include accounts of eyewitnesses to the happening event. It can contain photographs, accounts, statistics, graphs, recollections, interviews, polls, debates on the topic, etc. Headlines can be used to focus the reader's attention on a particular (or main) part of the article. The writer can also give facts and detailed information following answers to general questions like who, what, when, where, why and how.
+        </p>
+      </div>
+      <div class="article">
+        <h3>Article2</h3>
+        <p>A news article discusses current or recent news of either general interest (i.e. daily newspapers) or of a specific topic (i.e. political or trade news magazines, club newsletters, or technology news websites).
+        A news article can include accounts of eyewitnesses to the happening event. It can contain photographs, accounts, statistics, graphs, recollections, interviews, polls, debates on the topic, etc. Headlines can be used to focus the reader's attention on a particular (or main) part of the article. The writer can also give facts and detailed information following answers to general questions like who, what, when, where, why and how.</p>
+      </div>
+      <div class="article">
+        <h3>Article3</h3>
+        <p>A news article discusses current or recent news of either general interest (i.e. daily newspapers) or of a specific topic (i.e. political or trade news magazines, club newsletters, or technology news websites).
+        A news article can include accounts of eyewitnesses to the happening event. It can contain photographs, accounts, statistics, graphs, recollections, interviews, polls, debates on the topic, etc. Headlines can be used to focus the reader's attention on a particular (or main) part of the article. The writer can also give facts and detailed information following answers to general questions like who, what, when, where, why and how.</p>
+      </div>
+    </div>
+    <div class="aside">
+      Aside가 section이랑 한 줄에 나오려면 같은 영역에 잡혀야 하기 때문에 main태그로 묶는다.
+    </div>
+  </div>
+
+
+  <div class="footer" id="link_footer">
+    <div class="address">
+      <a href="mailto:billaa@naver.com">메일쓰기</a>
+      <a href="tel:+8201076623484">010-7662-3484</a>
+    </div>
+  </div>
+
+</body>
+</html>
