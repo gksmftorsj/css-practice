@@ -1,0 +1,24 @@
+<!-- label을 눌러도 checkbox에 check표시 X -->
+<label>당신은 밥을 먹었습니까?</label>
+<input type="checkbox">
+<br>
+<br>
+<!-- But id와 for을 입력하여 일치시키면 checkbox에 check표시 O -->
+<label for="hahaha">당신은 밥을 먹었습니까?</label>
+<input type="checkbox" id="hahaha">
+<br>
+<br>
+<!-- value를 지정하지 않으면 빈 버튼이 됨-->
+<input type="button">
+<br>
+<br>
+<input type="button" value="클릭하세요">
+<br>
+<br>
+<style>
+  input[type='image'] {
+    width: 80px;
+}
+</style>
+<input type="image" id="image" alt="Login"
+       src="intro.jpg">
