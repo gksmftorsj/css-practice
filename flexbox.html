@@ -5,12 +5,12 @@
   3. flex-wrap
   기본값(한줄에 붙어있음):nowrap; / 자동적으로 다음줄로 넘어감:wrap; / 아래에서부터 넘어감:wrap-reverse;
   *flex-flow: flex-direction felx-wrap; 이므로 flow써서 한꺼번에 적용가능함 ex) flex-flow: column wrap;
-  4. justify-content(x축에서 아이템 배치)
+  4. justify-content(중심축에서 아이템 배치-만약 wrap-reverse;쓰면 중심축이 y축이 되어서 y축에서 센터 맞추려면  justify-content써야함)
   flex-start;(row는 왼쪽에서 오른쪽으로(왼쪽정렬) column은 위에서 아래로(위쪽정렬))
   flex-end;(reverse와 달리 순서는 유지하되 row는 오른쪽정렬 column은 아래쪽정렬)
   center;(가운데정렬) / space-around;(박스기준 왼쪽 오른쪽으로 공간 생성하니까 맨끝은 공간이 반밖에 안됨)
   space-evenly;(박스기준 똑같은 공간 생성하니까 맨끝도 공간이 같음) / space-between;(맨끝은 container에 딱 맞추고 중간만 공간 생성)
-  5. align-items(y축에서 아이템 배치)
+  5. align-items(반대축축에서 아이템 배치)
   기본값(container의 높이와 동일하게 함):stretch; / flex-start; / flex-end; / center;(가운데정렬)
   baseline;(만약 padding으로 텍스트 위치가 바뀌었을 때 사용하면 다른 아이템 텍스트 위치와 동일해짐)
   6. align-content(wrap일때만 사용)
